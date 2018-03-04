@@ -1,0 +1,39 @@
+body {
+    background-image: url("upload/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon {
+    width: 25px;
+}
+
+.navbaricon {
+    width: 50px;
+}
+
+.bigicon {
+    width: 250px;
+}
+
+.sideimg {
+    float: left;
+    margin-right: 3px;
+}
+
+.displaydiv {
+    padding-left: 5px;
+    background-color: rgba(255,255,255, 0.6);
+}
+
+.error {
+    margin-top: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+.notification {
+    margin-top: 20px;
+    color: navy;
+    font-weight: 600;
+}
