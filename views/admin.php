@@ -105,9 +105,24 @@ Class Admin extends Render {
             } else echo '</h2>';
             
             echo '<form id="form" action="" method="POST">
-                <label>Name: <input type="text" name="name" value="'.$row['name'].'"></input></label><br>
-                <label>Phone: <input type="text" name="phone" value="'.$row['phone'].'"></input></label><br>
-                <label>Email: <input type="text" name="email" value="'.$row['email'].'"></input></label><br>';
+                <label>Name: <input type="text" name="name" value="';
+                if (isset($_POST['name'])) {
+                    echo $_POST['name'];
+                } else echo $row['name'];
+            
+            echo '"></label><br>
+                <label>Phone: <input type="text" name="phone" value="';
+                if (isset($_POST['phone'])) {
+                    echo $_POST['phone'];
+                } else echo $row['phone'];
+            
+            echo '"></label><br>
+                <label>Email: <input type="text" name="email" value="';
+                if (isset($_POST['email'])) {
+                    echo $_POST['email'];
+                } else echo $row['email'];
+            
+            echo '"></input></label><br>';
                 
                 if ($_SESSION['role']=='owner') {
                     echo '<label>Role: <select name="role">
