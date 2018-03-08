@@ -37,3 +37,7 @@ body {
     color: navy;
     font-weight: 600;
 }
+
+.row {
+    margin-bottom: 50px;
+}
